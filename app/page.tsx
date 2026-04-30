@@ -21,7 +21,7 @@ const users = [
     status: "Sleeping",
     battery: 67,
     connection: "Connected",
-    location: "In-house",
+    location: "siit bangkadi",
     gesture: "Lying down",
     heartRate: "70 BPM",
     temperature: "36.5 C",
@@ -56,7 +56,7 @@ export default function Home() {
   const phoneScreenRadius = "24px 24px 34px 34px"
   const phoneScreenClip = `inset(0 round ${phoneScreenRadius})`
   const [userList, setUserList] = useState(users)
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [currentScreen, setCurrentScreen] = useState<Screen>("dashboard")
   const [showFallAlert, setShowFallAlert] = useState(false)
   const [showFallNotificationScreen, setShowFallNotificationScreen] = useState(false)
